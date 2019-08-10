@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+
+class CoffeeShop {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float total=0;
+		float coffee_cost = sc.nextFloat();
+		float discount = sc.nextFloat();
+		while(coffee_cost>0)
+		{
+		    total = coffee_cost+total;
+		    float x = coffee_cost*(discount/100);
+		    coffee_cost= coffee_cost-x;
+		}
+		System.out.printf("%.0f",total);
+	}
+}
